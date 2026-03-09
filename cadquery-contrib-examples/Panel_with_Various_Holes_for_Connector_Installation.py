@@ -1,5 +1,8 @@
 import cadquery as cq
 
+from ocp_vscode import show as show_object
+
+
 # The dimensions of the model. These can be modified rather than changing the
 # object's code directly.
 width = 400
@@ -7,7 +10,7 @@ height = 500
 thickness = 2
 
 # Create a plate with two polygons cut through it
-result = cq.Workplane("front").box(width, height, thickness)
+result = cq.Workplane("front").box(width, height, thickness) 
 
 h_sep = 60
 for idx in range(4):

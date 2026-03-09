@@ -1,6 +1,8 @@
 import cadquery as cq
 from cadquery import selectors
 
+from ocp_vscode import show as show_object
+
 # This exemple demonstrates the use of a fillet to reinforce a junction between two parts.
 # It relies on the selection of an edge of the weak junction, and the use of fillet.
 

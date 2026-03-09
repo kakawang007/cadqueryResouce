@@ -1,5 +1,8 @@
 import cadquery as cq
 
+from ocp_vscode import show as show_object
+
+
 exploded = False        # when true, moves the base away from the top so we see
 showTop = True          # When true, the top is rendered.
 showCover = True        # When true, the cover is rendered

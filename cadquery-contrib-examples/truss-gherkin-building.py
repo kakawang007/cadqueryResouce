@@ -1,6 +1,9 @@
 import cadquery as cq
 import math
 
+from ocp_vscode import show as show_object
+
+
 HEIGHT = 20
 BASE_RADIUS = 2.4
 TOP_RADIUS = 0.5

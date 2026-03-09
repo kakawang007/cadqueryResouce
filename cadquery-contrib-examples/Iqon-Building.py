@@ -1,6 +1,9 @@
 import cadquery as cq
 import math
 
+from ocp_vscode import show as show_object
+
+
 ROOMS = 12
 LEVELS = 10
 displacement = 0.4

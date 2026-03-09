@@ -1,4 +1,7 @@
 import cadquery as cq
+
+from ocp_vscode import show as show_object
+
 BS = cq.selectors.BoxSelector
 
 # PARAMETERS

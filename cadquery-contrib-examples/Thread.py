@@ -2,6 +2,8 @@ import cadquery as cq
 from cadquery import *
 from math import *
 
+from ocp_vscode import show as show_object
+
 def helix(r0,r_eps,p,h,d=0,frac=1e-1):
     
     def func(t):

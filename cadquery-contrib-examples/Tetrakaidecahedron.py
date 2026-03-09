@@ -2,6 +2,8 @@ import cadquery as cq
 from math import pi, cos, acos, sin, sqrt, atan, tan
 import numpy as np
 
+from ocp_vscode import show as show_object
+
 
 # TETRAKAIDECAHEDRON
 

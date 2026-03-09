@@ -1,6 +1,7 @@
 import cadquery as cq
 from cadquery import Workplane, Edge, Wire, Vector
 from math import *
+from OCP.StdFail import StdFail_NotDone
 
 from ocp_vscode import show as show_object
 
@@ -65,7 +66,12 @@ def involute_gear(m, z, alpha=20, shift=0, N=20):
     
     # single tooth profile
     profile = Wire.assembleEdges([left,top,right,side1,bottom,side2])
-    profile = profile.chamfer2D(m/4, profile.Vertices()[-3:-1])
+    try:
+        profile = profile.chamfer2D(m/4, profile.Vertices()[-3:-1])
+    except (StdFail_NotDone, ValueError):
+        # Newer OCC/CadQuery builds can fail on this decorative chamfer.
+        # Keep the unchamfered profile so the example still generates.
+        pass
 
     # complete gear
     res = (

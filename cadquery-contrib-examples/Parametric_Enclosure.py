@@ -1,5 +1,7 @@
 import cadquery as cq
 
+from ocp_vscode import show as show_object
+
 # parameter definitions
 p_outerWidth = 100.0 #Outer width of box enclosure
 p_outerLength = 150.0 #Outer length of box enclosure

@@ -2,6 +2,9 @@ import cadquery as cq
 from cadquery import Assembly, Color, Location as Loc, Vector as Vec
 from numpy import linspace,diff
 
+from ocp_vscode import show as show_object
+
+
 Ws = 1200
 Hs = 600
 

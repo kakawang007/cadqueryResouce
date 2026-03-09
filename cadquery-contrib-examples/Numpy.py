@@ -1,6 +1,9 @@
 import numpy as np
 import cadquery as cq
 
+from ocp_vscode import show as show_object
+
+
 # Square side and offset in x and y.
 side = 10
 offset = 5
