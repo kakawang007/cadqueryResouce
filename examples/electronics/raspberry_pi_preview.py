@@ -10,5 +10,5 @@ from cq_models.electronics.rpi.rpi3b import RPi3b
 from ocp_vscode import show
 
 rpi = RPi3b(simple=False)
-show(rpi.cq_object, name="raspberry_pi_3b")
+show(rpi.cq_object, names=["raspberry_pi_3b"])
 

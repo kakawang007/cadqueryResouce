@@ -10,5 +10,5 @@ from cq_models.electronics.smd.bga import BGA
 from ocp_vscode import show
 
 bga = BGA(20, 20, simple=False)
-show(bga.cq_object, name="bga_package")
+show(bga.cq_object, names=["bga_package"])
 

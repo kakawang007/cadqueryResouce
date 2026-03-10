@@ -10,5 +10,5 @@ from cq_models.fasteners.reinforced_junction import ReinforcedJunction
 from ocp_vscode import show
 
 junction = ReinforcedJunction()
-show(junction.cq_object, name="reinforced_junction")
+show(junction.cq_object, names=["reinforced_junction"])
 

@@ -10,5 +10,5 @@ from cq_models.electronics.connectors.rj45 import JackSurfaceMount
 from ocp_vscode import show
 
 jack = JackSurfaceMount(simple=False)
-show(jack.cq_object, name="rj45_jack")
+show(jack.cq_object, names=["rj45_jack"])
 
