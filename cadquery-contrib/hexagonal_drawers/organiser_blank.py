@@ -5,6 +5,9 @@ An organiser that takes up 1/3 of a drawer and has no cutouts yet.
 import cadquery as cq
 import importlib
 import base
+
+from ocp_vscode import show as show_object
+
 importlib.reload(base)
 
 

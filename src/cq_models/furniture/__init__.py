@@ -1,0 +1,2 @@
+"""Furniture and structural components."""
+

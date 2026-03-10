@@ -7,6 +7,9 @@ import importlib
 import base
 import organiser_collets
 import organiser_3_125_bits
+
+from ocp_vscode import show as show_object
+
 importlib.reload(base)
 importlib.reload(organiser_collets)
 importlib.reload(organiser_3_125_bits)

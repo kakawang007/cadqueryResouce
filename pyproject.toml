@@ -1,0 +1,21 @@
+[build-system]
+requires = ["setuptools>=68.0", "setuptools-scm>=8.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "cq-models"
+version = "0.1.0"
+description = "A reusable CadQuery modeling library with separated modeling and preview concerns"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+dependencies = [
+    "cadquery>=2.4.0",
+]
+
+[project.optional-dependencies]
+preview = ["ocp-vscode"]
+dev = ["pytest", "ocp-vscode"]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
